@@ -1,0 +1,294 @@
+/* 公共样式 */
+
+/* icon字体样式 这里要注意路径的变化，fonts在上级目录，需要加../ */
+    @font-face {
+        font-family: 'icomoon';
+        src:  url('../fonts/icomoon.eot?tomleg');
+        src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+              url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+              url('../fonts/icomoon.woff?tomleg') format('woff'),
+              url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+    .w {
+        width: 1200px;
+        margin: 0 auto;
+    }
+/* 顶部快捷导航栏 */
+    .shortcut {
+        height: 31px;
+        background-color: #f1f1f1;
+    }
+    /* 左侧部分 */
+    .shortcut .dropdown p {
+        display: inline;
+        line-height: 31px;
+        font-size: 12px;
+    }
+    /* 登录 */
+    .shortcut .login {
+        font-size: 12px;
+    }
+    /* 注册 */
+   .shortcut  .register {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    /* 右侧 */
+    .shortcut .navitems {
+        float: right;
+        /* 鼠标经过变成小手 */
+        cursor: pointer;
+        line-height: 32px;
+        font-size: 12px;
+     }
+   .shortcut  .navitems li {
+        display: inline;
+        padding-left: 15px;
+        padding-right: 10px;
+        border-left: 1px solid #666666;
+    }
+    /* 第一个li的样式 */
+    .navitems li:first-child {
+        border-left:none;
+        padding-right: 10px;
+    }
+    /* 鼠标经过时变色 */
+    .navitems li:hover {
+        color: #c81623;
+    }
+    /* 伪类选择器，将小箭头加载到导航旁边 */
+    .arrow_icon::after {
+        content: '\e91e';
+        font-family: 'icomoon';
+        margin-left: 6px;
+    }
+    /* 头部部分 */
+    .header {
+        height: 105px;
+        position: relative;
+    }
+    .logo {
+        width: 171px;
+        height: 61px;
+        position:absolute;
+        top: 25px;
+   }
+   /* logo图片 */
+   .logo a {
+        display: block;
+        width: 171px;
+        height: 61px;
+        background: url(../image/logo.png) no-repeat;
+        /* 隐藏文字 京东做法*/
+        font-size: 0;
+        /*隐藏文字 小米、淘宝做法 文字向左走9999像素，溢出隐藏
+        text-indent: 9999px; 
+        overflow:hidden; */
+   }
+   /* 搜索框部分 */
+    .search {
+       height: 38px;
+       width: 538px;
+       position: absolute;
+       top: 0;
+       left: 351px;
+       border: 2px solid #c81623;
+    }
+    /* 搜索框 */
+    .search input {
+        width: 454px;
+        height: 32px;
+        /* 首行缩进2ch */
+        text-indent: 2ch;
+    }
+    /* 搜索框右侧按钮 */
+     .search button {
+        width: 80px;
+        height: 40px;
+        float: right;
+        margin-top: -1px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #c81623;
+
+    }
+    /* 热词 */
+    .hotwrods {
+        width: 538px;
+        position: absolute;
+        top: 45px;
+        left: 358px;
+    }
+    /* 热词 */
+    .hotwrods li {
+        float: left;
+        /* 鼠标经过变成小手 */
+        cursor: pointer;
+        padding: 0 12px;
+    }
+     /* 购物车 */
+    .ShoppingCart {
+        width: 141px;
+        height: 35px;
+        line-height: 35px;
+        position: absolute;
+        top: 0px;
+        left: 1000px;
+        cursor: pointer;
+        border: 1px solid #666666;
+        background-color: #f7f7f7;
+    }
+    /* 购物车左侧图标 */
+    .ShoppingCart::before {
+        content: '\e93a';
+        font-family: 'icomoon';
+        margin:0 10px;
+        color: #c81623;
+    }
+    /* 购物车右侧图标 */
+    .ShoppingCart::after {
+        content: '\e920';
+        font-family: 'icomoon';
+         margin:0 10px;
+        color: #666666;
+    }
+    /* 购物车商品数量 */
+    .count {
+        height: 14px;
+        padding: 0 5px;
+        position: absolute;
+        top: -8px;
+        right: 30px;
+        color: #fff;
+        line-height: 15px;
+        background-color: #c81623;
+        border-radius: 7px 7px 7px 0;
+    }
+  /* nav导航部分 */
+  .nav {
+    height: 50px;
+    border-bottom: 2px solid #c81623;
+    position: relative;
+  }
+  /* nav导航左侧 */
+  .nav .dropdown {
+    float: left;
+    height: 50px;
+    width: 210px;
+    background-color:#c81623;
+  }
+  /* 全部商品分类 */
+   .nav .dropdown .dd {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    color: #f1f1f1;
+   }
+
+   /* 商品列表 */
+   .nav .dropdown .dt {
+       background-color: #c81623;
+       width: 100%;
+   }
+   /* 默认隐藏dt下的a标签 */
+   .nav .dropdown .dt a {
+    height: 25px;
+    display: none;
+    text-indent: 2ch;
+    color: #fff;
+    font-size: 12px;
+    line-height: 25px;
+   }
+   /* 鼠标经过全部商品分类显示a标签 */
+    .nav .dropdown:hover .dt a{
+       display: block;
+   }
+   /* 鼠标经过a标签变色 */
+    .nav .dropdown .dt a:hover {
+        color: #c81623;
+        background-color: #fff;
+        margin-left: 2px;
+    }
+    /* 右侧 &gt; */
+    .nav .dropdown .dt a i {
+        float: right;
+    }
+  /* nav导航右侧 */
+  .nav .navitems {
+      float: left;
+  }
+
+  .nav .navitems ul {
+    height: 50px;
+    line-height: 50px;
+  }
+  .nav .navitems ul:first-child {
+      margin-left: 15px;    
+  }
+   .nav .navitems li {
+       float: left;
+       border: none;
+       margin: 0 25px;
+   }
+   .nav .navitems li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+   }
+   .fotter {
+       height: 420px;
+       padding-top: 30px;
+       background-color: #f5f5f5;
+   }
+   .mod_service {
+       height: 80px;
+       border-bottom: 1px solid #ccc;
+   }
+   .mod_service ul li {
+       float: left;
+       width: 265px;
+       height: 50px;
+        padding-left: 35px;
+   }
+   /* mod_service模块 */
+   .mod_service ul li h5 {
+       width: 50px;
+       height: 50px;
+       float: left;
+       background: url(../image/icons.png) no-repeat -252px -2px;
+       margin-right: 8px;
+   }
+  .servie h4 {
+    font-size: 14px;
+  }
+  .servie p {
+      font-size: 12px;
+  }
+  .mod_help {
+        height: 165px;
+        padding-top: 20px;
+        border-bottom: 1px solid #ccc;
+  }
+  .mod_help dl {
+      float: left;
+     width: 90px;
+  }
+  .mod_help dd {
+       margin-top: 5px;
+  }
+  .mod_help .dl {
+      margin-right: 100px;
+  }
+  .mod_help .dl:first-child {
+      margin-left: 50px;
+  }
+  .aboutme{
+      /* margin-top: 130px; */
+      line-height: 130px;
+      text-align: center;
+  }

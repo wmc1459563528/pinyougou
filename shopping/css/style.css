@@ -1,0 +1,178 @@
+.box {
+    /* 最外层div居中显示 */
+    height: 830px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+.pic1{
+    /* 左侧图片 */
+    float: left;
+    width: 200px;
+    height: 830px;
+}
+.right {
+    /* 右侧商品 */
+    float: left;
+    width: 1000px;
+    height: 300px;
+  
+    
+}
+/* 关键帧 100%时1.1倍放大 */
+@keyframes donghua {  
+    100%{
+        transform: scale(1.1);
+        }
+}
+.pic1:hover {
+       /* 调用关键帧 使鼠标放在盒子上时1秒放大1.1倍 鼠标放到盒子出现阴影部分 */
+    animation: donghua 1s;
+    box-shadow: 10px 10px 10px 4px  rgba(159, 154, 145, .5) ;
+}
+.one:hover {
+    /* 调用关键帧 使鼠标放在盒子上时1秒放大1.1倍 鼠标放到盒子出现阴影部分 */
+    animation: donghua 1s;
+    box-shadow: 10px 10px 10px 4px  rgba(159, 154, 145, .5) ;
+}
+.tow:hover {
+    /* 调用关键帧 使鼠标放在盒子上时1秒放大1.1倍 鼠标放到盒子出现阴影部分 */
+    animation: donghua 1s;
+    box-shadow: 10px 10px 10px 4px  rgba(159, 154, 145, .5) ;
+}
+.three:hover {
+      /* 调用关键帧 使鼠标放在盒子上时1秒放大1.1倍 鼠标放到盒子出现阴影部分 */
+    animation: donghua 1s;
+    box-shadow: 10px 10px 10px 4px  rgba(159, 154, 145, .5) ;
+}
+.four:hover {
+     /* 调用关键帧 使鼠标放在盒子上时1秒放大1.1倍 鼠标放到盒子出现阴影部分 */
+    animation: donghua 1s;
+    box-shadow: 10px 10px 10px 4px  rgba(159, 154, 145, .5) ;
+}
+.five:hover {
+  /* 调用关键帧 使鼠标放在盒子上时1秒放大1.1倍 鼠标放到盒子出现阴影部分 */
+    animation: donghua 1s;
+    box-shadow: 10px 10px 10px 4px  rgba(159, 154, 145, .5) ;
+}
+.six:hover {
+      /* 调用关键帧 使鼠标放在盒子上时1秒放大1.1倍 鼠标放到盒子出现阴影部分 */
+    animation: donghua 1s;
+    box-shadow: 10px 10px 10px 4px  rgba(159, 154, 145, .5) ;
+}
+.seven:hover {
+      /* 调用关键帧 使鼠标放在盒子上时1秒放大1.1倍 鼠标放到盒子出现阴影部分 */
+    animation: donghua 1s;
+    box-shadow: 10px 10px 10px 4px  rgba(159, 154, 145, .5) ;
+}
+.eight:hover {
+      /* 调用关键帧 使鼠标放在盒子上时1秒放大1.1倍 鼠标放到盒子出现阴影部分 */
+    animation: donghua 1s;
+    box-shadow: 10px 10px 10px 4px  rgba(159, 154, 145, .5) ;
+}
+.box .pic {
+    /* 图片内边距 */
+    width: 210px;
+    /* padding: 0px 20px; */
+} 
+.box .font{
+    /* 字体大小 外边距 */
+    color: #5f5f5f;
+    margin:10px 60px;
+    font-size: 14px;
+}
+.box .ms {
+    /* 左浮动 字体大小 外边距 */
+    float: left;
+    color: #c2c2c2;
+    font-size: 12px;
+    margin-left: 60px;
+}
+.box .ms2 {
+    /* 左浮动 字体大小 内、外左边距  左侧边框颜色和字体颜色一样*/
+    float: left;
+    color: #c2c2c2;
+    font-size: 12px;
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: 2px solid #c2c2c2;
+}
+.box .jg {
+    /* 左浮动 外边距 字体颜色 */
+    float: left;
+    margin: 20px 50px;
+    color: #FFAF78;
+    font-size: 14px;
+}
+.box .jg2 {
+    /* 左浮动 外边距 字体颜色 */
+    float: right;
+    margin-top: 20px;
+    color: #c2c2c2;
+    font-size: 14px;
+    text-decoration:line-through;
+}
+.one {
+    /* 盒子左浮动在一行显示，上下外边距为10px 左右为20px */
+    float: left;
+    width: 210px;
+    height: 400px;
+    background-color:#ffffff;
+    margin: 10px 20px;
+    
+}
+ .tow {
+    /* 盒子左浮动在一行显示，上下外边距为10px 左右为20px */
+    float: left;
+    width: 210px;
+    height: 400px;
+    background-color:#ffffff;
+    margin: 10px 20px;
+}
+.three {
+    /* 盒子左浮动在一行显示，上下外边距为10px 左右为20px */
+    float: left;
+    width: 210px;
+    height: 400px;
+    background-color:#ffffff;
+    margin: 10px 20px;
+}
+.four {
+    /* 盒子左浮动在一行显示，上下外边距为10px 左右为20px */
+    float: left;
+    width: 210px;
+    height: 400px;
+    background-color:#ffffff;
+    margin: 10px 20px;
+} 
+.five {
+     /* 盒子左浮动在一行显示，上下外边距为10px 左右为20px */
+    float: left;
+    width: 210px;
+    height: 400px;
+    background-color:#ffffff;
+    margin: 10px 20px;
+}
+.six {
+     /* 盒子左浮动在一行显示，上下外边距为10px 左右为20px */
+    float: left;
+    width: 210px;
+    height: 400px;
+    background-color:#ffffff;
+    margin: 10px 20px;
+}
+.seven {
+     /* 盒子左浮动在一行显示，上下外边距为10px 左右为20px */
+    float: left;
+    width: 210px;
+    height: 400px;
+    background-color:#ffffff;
+    margin: 10px 20px;
+}
+.eight {
+     /* 盒子左浮动在一行显示，上下外边距为10px 左右为20px */
+    float: left;
+    width: 210px;
+    height: 400px;
+    background-color:#ffffff;
+    margin: 10px 20px;
+}
